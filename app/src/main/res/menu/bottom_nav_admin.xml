@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/admin_manage"
+            android:title="Manage"
+            android:icon="@drawable/ic_manage" />
+        <item android:id="@+id/admin_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_person" />
+    </menu>

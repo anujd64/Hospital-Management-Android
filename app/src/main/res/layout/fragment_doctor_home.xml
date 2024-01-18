@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.fragments.DoctorHomeFragment">
+
+
+    <TextView
+        style="@style/textBoldHeading"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Dashboard" />
+
+    <TextView
+        android:id="@+id/greetings_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Good Morning, \nDr. Abc"
+        android:textSize="30sp"
+        android:textColor="?attr/customTextColor"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+<!--    <TextView-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+
+<!--        android:textColor="?attr/customTextColor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="32dp"-->
+<!--        android:text="Patients Assigned" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/view_patients_button"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/ic_doctors"
+        android:backgroundTint="@color/blue_200"
+        android:text="View All Assigned Patients"
+        tools:ignore="HardcodedText,RtlHardcoded,UnusedAttribute" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginHorizontal="32dp"
+        android:textColor="?attr/customTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upcoming_heading"
+        android:text="Upcoming Appointments" />
+
+    <TextView
+        android:id="@+id/no_appointments"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:textColor="?attr/customTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="No Upcoming Appointments" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:layout_marginHorizontal="32dp"
+            android:id="@+id/appointments_rv"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            tools:listitem="@layout/row_item_appointment"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

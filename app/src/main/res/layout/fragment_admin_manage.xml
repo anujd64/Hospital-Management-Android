@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".admin.fragments.AdminManageFragment">
+
+    <TextView
+        style="@style/textBoldHeading"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Manage Profiles" />
+
+    <TextView
+        android:id="@+id/greetings_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Good Morning, \nUser Admin"
+        android:textSize="30sp"
+        android:textColor="?attr/customTextColor"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/buttonDoctor"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/poppins_regular"
+        app:icon="@drawable/ic_add_doctor"
+        app:iconSize="30sp"
+        app:iconTint="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/blue_200"
+        android:background="@drawable/rounded_corner_rect"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="32dp"
+        android:text="Register New Doctor"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/buttonPatient"
+        android:layout_width="match_parent"
+        app:icon="@drawable/ic_add_patient"
+        app:iconSize="30sp"
+        app:iconTint="@color/white"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        app:backgroundTint="@color/blue_200"
+        android:background="@drawable/rounded_corner_rect"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Register New Patient"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/buttonAllDoctor"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        app:icon="@drawable/ic_doctors"
+        app:iconSize="30sp"
+        android:fontFamily="@font/poppins_regular"
+        app:iconTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:backgroundTint="@color/blue_200"
+        android:background="@drawable/rounded_corner_rect"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="32dp"
+        android:text="View Doctor Profiles"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/buttonAllPatient"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_patients"
+        app:iconSize="30sp"
+        android:fontFamily="@font/poppins_regular"
+        app:iconTint="@color/white"
+        app:backgroundTint="@color/blue_200"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/rounded_corner_rect"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="View Patient Profiles"/>
+
+
+
+</LinearLayout>

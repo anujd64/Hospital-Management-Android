@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="32dp"
+    tools:context=".doctor.fragments.AssignMedsFragment">
+    <TextView
+        style="@style/textBoldHeading"
+        android:layout_marginVertical="15dp"
+        android:text="Assign Medicine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="15dp"
+                android:text="Medicine Name"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="15dp"
+                android:text="Dosage per Day"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxMedicine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingHorizontal="20dp"
+                android:text="Levocitrizine"/>
+
+            <Button
+                android:id="@+id/btnDecrease1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tvDosage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btnIncrease1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxMedicine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingHorizontal="20dp"
+                android:text="Azithromycin"/>
+
+            <Button
+                android:id="@+id/btnDecrease2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tvDosage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btnIncrease2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxMedicine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingHorizontal="20dp"
+                android:text="Scopolamine"/>
+
+            <Button
+                android:id="@+id/btnDecrease3"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tvDosage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btnIncrease3"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxMedicine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingStart="20dp"
+                android:paddingEnd="54dp"
+                android:text="Insuline"/>
+
+            <Button
+                android:id="@+id/btnDecrease4"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tvDosage4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btnIncrease4"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxMedicine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingEnd="8dp"
+                android:paddingStart="20dp"
+                android:text="Norepinephrine"/>
+
+            <Button
+                android:id="@+id/btnDecrease5"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tvDosage5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btnIncrease5"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxMedicine6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingEnd="38dp"
+                android:paddingStart="20dp"
+                android:text="Adrenaline"/>
+
+            <Button
+                android:id="@+id/btnDecrease6"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tvDosage6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/btnIncrease6"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/send_prescription_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_200"
+            android:text="Send Prescription" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

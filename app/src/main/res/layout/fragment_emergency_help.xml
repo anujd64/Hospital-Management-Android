@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="32dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/textBoldHeading"
+        android:paddingBottom="15dp"
+        android:text="Emergency Tips" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="?attr/customTextColor"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content"
+        android:text="What is the emergency ?" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bpButton"
+            style="@style/textBoldHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/customTextColor"
+            android:text="@string/blood_pressure_title"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_pressure_instructions"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/customTextColor"
+            android:layout_marginHorizontal="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/unconsciousnessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textBoldHeading"
+            android:text="@string/unconsciousness_title"
+            android:textColor="?attr/customTextColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/unconsciousnessText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/unconsciousness_instructions"
+            android:textColor="?attr/customTextColor"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ivButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leakage_title"
+            style="@style/textBoldHeading"
+            android:textColor="?attr/customTextColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ivText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leakage_instructions"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:textColor="?attr/customTextColor"
+            android:layout_marginHorizontal="24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notification_message"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/blue_500"
+        android:textStyle="italic|bold"
+        android:layout_height="wrap_content"
+        android:text="Relax doctor has been notified of your emergency." />
+
+</LinearLayout>

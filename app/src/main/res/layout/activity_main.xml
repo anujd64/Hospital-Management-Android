@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_activity"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:fontFamily="@font/poppins_semibold"
+        android:id="@+id/app_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/customTextColor"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingVertical="5dp"
+        android:textSize="28sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="Hospital"/>
+    <RelativeLayout
+
+        android:layout_below="@id/app_heading"
+        android:id="@+id/mainactivity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_rect"
+        android:layout_marginHorizontal="18dp"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <TextView
+        android:fontFamily="@font/poppins_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="Login"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPageEmailTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/emailHint">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPageEmailEditText"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPagePasswordTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@id/loginPageEmailTextField"
+            android:hint="@string/passwordHint">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPagePasswordEditText"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPagePasswordTextField"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioPatient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:text="Patient"/>
+
+
+            <RadioButton
+                android:id="@+id/radioDoctor"
+                android:layout_width="0dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doctor"/>
+
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Admin"/>
+        </RadioGroup>
+
+        <TextView
+        android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewErrorLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/radiogroup"
+            android:text="@string/invalidCredentialsMsg"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+        <TextView
+        android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewSelectRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/radiogroup"
+            android:text="Select type of user"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+        <TextView
+        android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewInvalidUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/radiogroup"
+            android:text="User not found for provided role!"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+        <TextView
+        android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewEmailNotVerified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiogroup"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:text="@string/emailVerificationText"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/mainActivityIndeterminateProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/black"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmailNotVerified"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gradient_list_button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Login" />
+
+        <TextView
+        android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/customTextColor"
+            android:layout_below="@id/login_button"
+            android:text="Forgot Password?"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="18dp"
+        android:padding="16dp"
+        android:paddingVertical="30dp"
+        android:layout_below="@id/mainactivity_linearlayout"
+        android:background="@drawable/rounded_corner_rect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New to the System ?"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_above="@id/registerHereTextView"
+        android:textColor="@color/black_condensed"/>
+
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/registerHereTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register here"
+        android:textAlignment="center"
+        android:textColor="@color/black_condensed"/>
+
+    <LinearLayout
+        android:layout_below="@id/registerHereTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/gradient_list_button_2"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginEnd="15dp"
+            android:text="Admin"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
