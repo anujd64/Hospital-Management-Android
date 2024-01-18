@@ -14,13 +14,11 @@ The Hospital Management App is an Android application designed to establish an e
 
 - **Express API Integration:**
   - Develop a complementary Express API to facilitate the seamless transmission of notification requests from patients to Firebase.
+  - [Hospital Management Express API](https://github.com/anujd64/Hospital-Management-Express-API)
 
-## Screenshots
+## 📱 Screenshots :
 
 <img src="https://github.com/anujd64/Hospital-Management-Android/blob/main/Screenshots/Screenshot1.png?raw=true" style="width: 23%;margin:16px;" />&nbsp;&nbsp;
-
 <img src="https://github.com/anujd64/Hospital-Management-Android/blob/main/Screenshots/Screenshot2.png?raw=true" style="width: 23%;margin:16px;" />&nbsp;&nbsp;
-
 <img src="https://github.com/anujd64/Hospital-Management-Android/blob/main/Screenshots/Screenshot3.png?raw=true" style="width: 23%;margin:16px;" />&nbsp;&nbsp;
-
 <img src="https://github.com/anujd64/Hospital-Management-Android/blob/main/Screenshots/Screenshot4.png?raw=true" style="width: 23%;margin:16px;" />&nbsp;&nbsp;
